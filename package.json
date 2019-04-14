@@ -1,5 +1,6 @@
 {
   "name": "random-kitties",
+  "homepage": "https://angelfire529.github.io/random-kitties",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
