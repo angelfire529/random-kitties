@@ -10,8 +10,9 @@ class CatService {
     GetRandomCat() {
         const config = {
             headers: {
-                'X-Forwarded-Proto': 'https',
-                'X-Forwarded-For': '54.243.143.247, 23.21.160.161'
+                'X-Forwarded-Proto': 'http',
+                'X-Forwarded-For': '54.243.143.247, 23.21.160.161',
+                'X-Forwarded-Host': ''
             }
         }
         let promise = new Promise(function(resolve, reject) {
