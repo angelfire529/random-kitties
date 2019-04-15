@@ -67,7 +67,6 @@ export default class SlideOut extends Component {
             thumbnails =   <CSSTransition
                                             in={this.state.show}
                                             enter={this.state.show}
-                                            exit={this.state.show === false}
                                             appear={true}
                                             timeout={3000}
                                             classNames="slide"
