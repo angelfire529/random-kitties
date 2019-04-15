@@ -14,13 +14,13 @@ class CatService {
             }
         }
         let promise = new Promise(function(resolve, reject) {
-            request.get('http://aws.random.cat/meow', { followAllRedirects: false}, function (err, resp, body) {
+            request.get('http://aws.random.cat/meow', config, function (err, resp, body) {
                 if (!err) {
                     const src = JSON.parse(body);
                     resolve(src.file);
                 }
                 else {
-                    reject(err)
+                    reject(err);
                 }
             });
         });
