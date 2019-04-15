@@ -28,28 +28,24 @@
     &-appear {
         
         &-active {
-            animation: run-in 5s forwards;
+            animation: run-in 3s forwards;
         }
     }
     &-enter {
         &-actve {
-            animation: run-in 5s forwards;
+            animation: run-in 3s forwards;
         }
     }
-
-    &-leave {
-        &-active {
-           animation: run-out 5s forwards;
-        }
-    }
-
 }
 
 @keyframes run-in {
-    100% { -webkit-transform: translateX(0%); }
-}
-
-@keyframes run-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        opacity: 0;
+        transform: translateX(-40%);
+        transition: all 3s ease-in;
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0%); 
+    }
 }
