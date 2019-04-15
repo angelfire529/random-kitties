@@ -11,7 +11,7 @@ class CatService {
         const config = {
             headers: {
                 'X-Forwarded-Proto': 'https',
-                'X-Forwarded-For': '54.243.143.247'
+                'X-Forwarded-For': '54.243.143.247, 23.21.160.161'
             }
         }
         let promise = new Promise(function(resolve, reject) {
