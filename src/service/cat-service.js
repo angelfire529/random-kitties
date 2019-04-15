@@ -8,6 +8,11 @@ class CatService {
  }
  
     GetRandomCat() {
+        const config = {
+            headers: {
+                'X-Forwarded-Proto': 'https'
+            }
+        }
         let promise = new Promise(function(resolve, reject) {
             request.get('http://aws.random.cat/meow', { followAllRedirects: false}, function (err, resp, body) {
                 if (!err) {
