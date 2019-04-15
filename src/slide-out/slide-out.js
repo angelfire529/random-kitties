@@ -69,7 +69,7 @@ export default class SlideOut extends Component {
                                             enter={this.state.show}
                                             exit={!this.state.show}
                                             appear={true}
-                                            timeout={15000}
+                                            timeout={5000}
                                             classNames="slide"
                                             >
             <SlideOutPanel className="" hide={this.hideSlideOut} show={this.state.show} cat={this.state.category} />

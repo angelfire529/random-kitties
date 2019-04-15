@@ -26,32 +26,32 @@
 
 .slide {
     &-appear {
-
+        
         &-active {
-            animation-name: run;
-            animation-duration: 15s;
-            animation-direction: normal;
+            animation: run-in 5s forwards;
         }
     }
     &-enter {
         &-actve {
-            animation-name: run;
-            animation-duration: 15s;
-            animation-direction: normal;
+            animation: run-in 5s forwards;
         }
     }
 
     &-leave {
         &-active {
-            animation-name: run;
-            animation-duration: 15s;
-            animation-direction: normal;
+           animation: run-out 5s forwards;
         }
     }
 
 }
 
-@keyframes run {
-    0% {left: 0}
-    100% {left: 100%}
+@keyframes run-in {
+    // 0% {left: 0}
+    // 100% {left: 100%}
+    100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes run-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
 }
