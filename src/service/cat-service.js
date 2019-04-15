@@ -30,7 +30,7 @@ class CatService {
     }
 
     GetImagesByCategory(category) {
-        let cats = JSON.parse(localStorage.getItem('categories'));
+        let cats = JSON.parse(localStorage.getItem('categories')) || [];
         const found = cats.find(cat => {
             return cat.category.toLowerCase() === category.toLowerCase();
         });
